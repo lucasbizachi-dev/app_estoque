@@ -1,6 +1,7 @@
-def iniciar_menu
+def iniciar_menu(produtos = [])
+    
     loop do
-        puts "===== Escolha uma das opções abaixo ====="
+        mensagem_amarelo("===== Escolha uma das opções abaixo =====", false, false)
         puts "1 - Cadastro de Produtos"
         puts "2 - Lista de Produtos"
         puts "3 - Retirada de Estoque"
