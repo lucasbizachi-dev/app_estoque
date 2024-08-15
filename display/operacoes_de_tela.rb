@@ -16,6 +16,11 @@ def mensagem(msg, usar_limpar_tela=true, usar_timer=true, timer=5)
   def mensagem_amarelo(msg, usar_limpar_tela=true, usar_timer=true, timer=5)
     mensagem(msg.colorize(:yellow), usar_limpar_tela, usar_timer, timer)
   end
+
+  def mensagem_azul(msg, usar_limpar_tela=true, usar_timer=true, timer=5)
+    mensagem(msg.colorize(:blue), usar_limpar_tela, usar_timer, timer)
+  end
+
   
   def limpar_tela
     if Gem.win_platform?
