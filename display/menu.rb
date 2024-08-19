@@ -12,7 +12,7 @@ def iniciar_menu(produtos = [])
         when 1 
             cadastro_produto(produtos)
         when 2
-            mensagem "Lista"
+            lista_produto(produtos)
         when 3 
             mensagem "Retirada"
         when 4

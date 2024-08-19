@@ -16,4 +16,12 @@ def cadastro_produto(produtos)
     quantidade_estoque = gets.to_i
     limpar_tela
 
+    produtos << {
+        id: Time.now.to_i,
+        nome: nome,
+        descricao: descricao,
+        preco: preco,
+        quantidade: quantidade_estoque
+    }
+
 end
