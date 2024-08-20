@@ -24,4 +24,8 @@ def cadastro_produto(produtos)
         quantidade: quantidade_estoque
     }
 
+
+    mensagem_verde("#{(nome)} foi cadastrado com sucesso! ", true, true, 3)
+
+
 end

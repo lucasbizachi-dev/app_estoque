@@ -1,6 +1,7 @@
 require 'terminal-table'
 
 def lista_produto(produtos)
+    limpar_tela
     mensagem_amarelo("======Lista de produtos======", true, true)
 
     table = Terminal::Table.new do |t|
@@ -11,5 +12,10 @@ def lista_produto(produtos)
     end
    
     puts table
+    
+    mensagem_amarelo("Digite ENTER para continuar...", false, false)
+    gets
+    limpar_tela
+
 end
 

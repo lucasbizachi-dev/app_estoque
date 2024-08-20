@@ -14,7 +14,7 @@ def iniciar_menu(produtos = [])
         when 2
             lista_produto(produtos)
         when 3 
-            mensagem "Retirada"
+            retirar_estoque(produtos)
         when 4
             limpar_tela
              exit
